@@ -1,0 +1,740 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "Nos";
+  src: url("/assets/nos.ttf") format("truetype");
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Nos", sans-serif;
+}
+
+a {
+  width: 100%;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section:nth-child(1) {
+  background: url("/assets/bg-sensi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  backdrop-filter: blur(5px);
+}
+
+.section:nth-child(2) {
+  background: url("/assets/bg-second.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  backdrop-filter: blur(5px);
+}
+
+.section:nth-child(3) {
+  background: url("/assets/bg-second.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  backdrop-filter: blur(5px);
+}
+
+.section:nth-child(4) {
+  background: url("/assets/bg-second.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  backdrop-filter: blur(5px);
+}
+
+.section:nth-child(5) {
+  background: url("/assets/bg-second.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  backdrop-filter: blur(5px);
+}
+
+.section .main {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+
+  margin: 0px auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section .main div {
+  width: 100%;
+  height: 100%;
+}
+
+.main div h1 {
+  width: 100%;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 49px;
+
+  margin-top: 30vh;
+}
+
+.main div h1 span {
+  color: red;
+  background: #230408;
+  padding: 4px 8px;
+  font-size: 64px;
+}
+
+.main div p {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+
+  background: transparent;
+  border: solid red 1px;
+  border-radius: 12px;
+
+  color: white;
+
+  font-size: 16px;
+  margin-top: 10px;
+
+  animation: pulse 1.5s infinite ease-in-out;
+  transition: all ease-in-out 0.15s;
+}
+
+button:hover {
+  background: red;
+}
+
+.second {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+
+  margin: 0px auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.second div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second div h1 {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.second div h1 span {
+  color: red;
+  background: #230408;
+  padding: 4px 8px;
+}
+
+.second div iframe {
+  width: 800px;
+  height: 600px;
+
+  margin-top: 16px;
+}
+
+.second div p {
+  font-family: "Poppins";
+  margin-top: 8px;
+}
+
+.feedback {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+
+  margin: 0px auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.feedback > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback div h1 {
+  text-align: center;
+  margin-top: 13vh;
+}
+
+.feedback div h1 span {
+  color: red;
+  background: #230408;
+  padding: 4px 8px;
+}
+
+.feedback div p {
+  font-family: "Poppins";
+  text-align: center;
+  width: 600px;
+  font-size: 22px;
+  margin-top: 12px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  margin-top: 60px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out;
+  width: 300%;
+}
+
+.carousel-container iframe {
+  /* width: 50%; */
+  width: 400px;
+  height: 700px;
+  border: none;
+}
+
+.carousel-button {
+  position: absolute;
+  width: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.next {
+  right: 0px;
+  border-radius: 4px 0 0 4px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    max-width: 100%;
+    margin: 0 8px;
+  }
+  
+  .carousel-button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+.third {
+  width: 100%;
+  height: 100%;
+
+  margin: 0px auto;
+
+  display: flex;
+  flex-direction: col;
+  justify-content: center;
+}
+
+.third > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 6vh;
+}
+
+.third div h1 span {
+  color: red;
+  background: #230408;
+  padding: 4px 8px;
+}
+
+.third .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 16px;
+  width: 400px;
+  background: transparent;
+  border: solid red 1px;
+  background: #6f110013;
+  border-radius: 12px;
+}
+
+.card h1 {
+  font-size: 45px;
+
+  text-align: center;
+}
+
+.card h1 span {
+  color: red;
+  background: #230408;
+  padding: 4px 8px;
+}
+
+.card div span {
+  font-family: "Poppins";
+}
+
+.card div h2 {
+  font-size: 60px;
+}
+
+.card div {
+  width: 300px;
+  height: auto;
+
+  margin-top: 40px;
+}
+
+.card div ul {
+  width: 90%;
+}
+
+.card div ul li {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.card div ul li i {
+  color: red;
+}
+
+.card .price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.card .price div {
+  text-align: center;
+}
+
+.card > .price > div > span > span {
+  color: red;
+  text-decoration: line-through;
+}
+
+.cards div h1 {
+  text-align: center;
+
+  font-size: 34px;
+}
+
+.price > div > h1 {
+  font-size: 40px;
+  color: rgb(0, 255, 0);
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  margin-top: 2vh;
+}
+
+.fourth {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+
+  margin: 0px auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fourth > div > h1 {
+  text-align: center;
+  margin-top: 12vh;
+}
+
+.fourth div h1 span {
+  color: red;
+  background: #230408;
+  padding: 4px 8px;
+}
+
+/* .fourth div .swiper {
+  margin-top: 4vh;
+} */
+
+.fifth {
+  width: 100%;
+  height: 70%;
+
+  margin: 0px auto;
+
+  display: flex;
+  flex-direction: col;
+  justify-content: center;
+}
+
+.fifth > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 12vh;
+}
+
+.fifth div h1 span {
+  color: red;
+  background: #230408;
+  padding: 4px 8px;
+}
+
+.fifth div div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin-top: 10vh;
+}
+
+details {
+  width: 800px;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 8px;
+  background-color: transparent;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+summary {
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 4px 20px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary span {
+  font-family: "Poppins";
+}
+
+details p {
+  margin-top: 2px;
+  line-height: 1.6;
+  color: #cdcdcd;
+  padding: 4px 20px;
+
+  font-family: "Poppins";
+}
+
+.fourth > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+}
+
+.fourth > div > div > .grid {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 8px;
+  background-color: transparent;
+
+  width: 400px;
+  height: 300px;
+
+  text-align: center;
+}
+
+.step i {
+  font-size: 34px;
+}
+
+.step h1 {
+  font-family: "Poppins";
+}
+
+.step p {
+  font-family: "Poppins";
+  color: #b9b9b9;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins";
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .section:nth-child(1) {
+    background: url("/assets/bg-sensi-mobile.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    backdrop-filter: blur(5px);
+  }
+
+  .section {
+    height: 100%;
+    flex-direction: column;
+    padding: 8px;
+  }
+
+  .section:nth-child(1) {
+    height: 100vh;
+  }
+
+  .section .main {
+    max-width: 400px;
+  }
+
+  .second {
+    max-width: 400px;
+  }
+
+  .second div iframe {
+    width: 400px;
+    height: 600px;
+
+    margin-top: 16px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .fourth {
+    max-width: 400px;
+  }
+
+  .fourth > div > div > .grid {
+    flex-direction: column;
+  }
+
+  details {
+    width: 400px;
+  }
+
+  .section .main div:nth-child(2) {
+    display: none;
+  }
+
+  .main div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main div h1 {
+    font-size: 24px;
+    text-align: center;
+
+    margin-top: 10vh;
+  }
+
+  .main div h1 span {
+    font-size: 40px;
+  }
+
+  .main div p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .second div h1 {
+    font-size: 24px;
+    text-align: center;
+    
+  }
+
+  .second div iframe {
+    width: 300px;
+    height: 200px;
+  }
+
+  .second div p {
+    text-align: center;
+    margin-top: 2px;
+  }
+
+  .second div a {
+    width: 100%;
+  }
+
+  .second > div > a {
+    width: 400px;
+  }
+
+  .fourth div h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .third div h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .step {
+    width: 300px;
+    height: 300px;
+  }
+
+  .third .card {
+    width: 300px;
+  }
+
+  .card div {
+    width: 285px;
+    height: auto;
+
+    margin-top: 40px;
+  }
+
+  .fifth div h1 {
+    font-size: 24px;
+    text-align: center;
+
+    width: 300px;
+  }
+
+  details {
+    width: 300px;
+  }
+
+  .carousel-container iframe {
+    width: 300px;
+  }
+
+  .feedback div p {
+    font-size: 16px;
+    width: 300px;
+  }
+}
